@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Boost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Boost</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#workouts">Workouts</a>
+            <a href="#profile">Profile</a>
+            <a href="#progress">Progress</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Fitness Boost</h2>
+        <p>Your journey to a healthier lifestyle starts here.</p>
+        <button id="startWorkout">Get a Workout Plan</button>
+    </section>
+
+    <section id="workouts">
+        <h2>Your Workout Plan</h2>
+        <div id="workoutPlan">
+            <img src="images/workout-plan.png" alt="Workout Plan">
+        </div>
+    </section>
+    
+
+    <section id="profile">
+        <h2>Your Profile</h2>
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+            
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+            
+            <label for="goal">Fitness Goal:</label>
+            <select id="goal" required>
+                <option value="loseWeight">Lose Weight</option>
+                <option value="buildMuscle">Build Muscle</option>
+                <option value="stayFit">Stay Fit</option>
+            </select>
+            
+            <button type="submit">Save Profile</button>
+        </form>
+    </section>
+
+    <section id="progress">
+        <h2>Your Progress</h2>
+        <div id="progressTracker"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
